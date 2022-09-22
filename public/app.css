@@ -1,0 +1,19 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    max-width: 600px;
+    margin: auto;
+}
+
+p {
+    line-height: 1.7;
+    margin: 0 0 10px;
+}
+
+article + article {
+    margin-top: 3rem;
+    border-top: 1px solid #c5c5c5;
+}
