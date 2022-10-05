@@ -4,16 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Home Default || Blogar - Personal Blog Template</title>
+    <title>Hustle And Code</title>
     <meta name="robots" content="index, follow" />
-    <meta name="description" content="">
+    <meta name="description" content="Hustle and Code is the premier lifestyle blog for the ambitious programmer in the hustle.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('/images/favicon.png') }}">
     
     <!-- CSS
     ============================================ -->
-
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" >
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('/css/vendor/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/vendor/font-awesome.css') }}">
@@ -52,8 +52,8 @@
                     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-3 col-12">
                         <div class="logo">
                             <a href="/">
-                                <img lazy="loading" class="dark-logo" src="{{ asset('/images/logo/logo.png') }}" alt="Daryl Dauphin Logo">
-                                <img lazy="loading" class="light-logo" src="{{ asset('/images/logo/logo.png') }}" alt="Daryl Dauphin Logo">
+                                <img lazy="loading" class="dark-logo" src="{{ asset('/images/logo/logo.png') }}" alt="Hustle and Code Logo">
+                                <img lazy="loading" class="light-logo" src="{{ asset('/images/logo/logo-dark.png') }}" alt="Hustle and Code Logo">
                             </a>
                         </div>
                     </div>
@@ -161,7 +161,7 @@
                             <div class="logo">
                                 <a href="/">
                                     <img lazy="loading" class="dark-logo" src="{{ asset('/images/logo/logo.png') }}" alt="Daryl Dauphin Logo">
-                                    <img lazy="loading" class="white-logo" src="{{ asset('/images/logo/logo.png') }}" alt="Daryl Dauphin Logo">
+                                    <img lazy="loading" class="white-logo" src="{{ asset('/images/logo/logo-dark.png') }}" alt="Daryl Dauphin Logo">
                                 </a>
                             </div>
                         </div>

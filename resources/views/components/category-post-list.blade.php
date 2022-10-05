@@ -6,7 +6,7 @@
         </a>
     </div>
     <div class="post-content">
-        <div class="post-cat">
+        {{-- <div class="post-cat">
             <div class="post-cat-list">
                 <a class="hover-flip-item-wrapper" href="/posts/{{ $result->slug }}">
                     <span class="hover-flip-item">
@@ -14,7 +14,7 @@
                     </span>
                 </a>
             </div>
-        </div>
+        </div> --}}
         <h4 class="title"><a href="/posts/{{ $result->slug }}">{{ $result->title }}</a></h4>
         <div class="post-meta-wrapper">
             <div class="post-meta">

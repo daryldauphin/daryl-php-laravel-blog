@@ -1,506 +1,74 @@
 <x-layout> 
 
-        <!-- Start Post Single Wrapper  -->
-        <div class="post-single-wrapper axil-section-gap bg-color-white">
+          <!-- Start Post Single Wrapper  -->
+          <div class="axil-privacy-area axil-section-gap bg-color-white">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 offset-lg-2">
-                        <!-- Start Banner Area -->
-                        <div class="banner banner-single-post post-formate post-layout pb--40">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <!-- Start Single Slide  -->
-                                        <div class="content-block">
-                                            <!-- Start Post Content  -->
-                                            <div class="post-content">
-                                                <div class="post-cat">
-                                                    <div class="post-cat-list">
-                                                        <a class="hover-flip-item-wrapper" href="/categories/{{$post->category->slug}}">
-                                                            <span class="hover-flip-item">
-                                                                <span data-text="{{$post->category->name}}">{{$post->category->name}}</span>
-                                                            </span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <h1 class="title">{{ $post->title }}</h1>
-                                                <!-- Post Meta  -->
-                                                <div class="post-meta-wrapper">
-                                                    <div class="post-meta">
-                                                        <div class="post-author-avatar border-rounded">
-                                                            <img src="assets/images/post-images/author/author-image-3.png" alt="Author Images">
-                                                        </div>
-                                                        <div class="content">
-                                                            <h6 class="post-author-name">
-                                                                <a class="hover-flip-item-wrapper" href="/?author={{ $post->author->username }}">
-                                                                    <span class="hover-flip-item">
-                                                                        <span data-text="{{$post->author->name}}">{{$post->author->name}}</span>
-                                                                    </span>
-                                                                </a>
-                                                            </h6>
-                                                            <ul class="post-meta-list">
-                                                                <li>Published <time>{{ $post->created_at->diffForHumans() }}</time>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    {{-- <ul class="social-share-transparent justify-content-end">
-                                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                                        <li><a href="#"><i class="fas fa-link"></i></a></li>
-                                                    </ul> --}}
-                                                </div>
-                                            </div>
-                                            <!-- End Post Content  -->
-                                        </div>
-                                        <!-- End Single Slide  -->
-                                    </div>
+                    <div class="col-lg-10 offset-lg-1">
+                        <div class="content">
+                            <div class="inner">
+                                <div class="section-title">
+                                    <h4 class="title">This Privacy policy was published on Oct 2nd, 2022.</h4>
                                 </div>
-                            </div>
-                        </div>
-                        <!-- End Banner Area -->
-                        <!-- Start Blog Details  -->
-                        <div class="axil-post-details">
-                            <p class="has-medium-font-size">Winners are recognized for outstanding app design,
-                                innovation, ingenuity, and technical achievement</p>
-                            <figure class="wp-block-image alignwide text-center">
-                                <img src="assets/images/post-single/post-single-06.jpg" alt="Post Images">
-                            </figure>
-                            <p>{{$post->body}}</p>
+                                
+                                <p>This page is used to inform website visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service, the Hustle and Code website.</p>
 
-                            <div class="tagcloud">
-                                <a href="/categories/{{$post->category->slug}}">{{$post->category->name}}</a>
-                            </div>
-
-                            <div class="social-share-block">
-                                <div class="post-like">
-                                    <a href="#"><i class="fal fa-thumbs-up"></i><span>2.2k Like</span></a>
-                                </div>
-                                <ul class="social-icon icon-rounded-transparent md-size">
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <p>If you choose to use our Service, then you agree to the collection and use of information in relation with this policy. The Personal Information that we collect are used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy. Our Privacy Policy was created with the help of the <a href="https://www.privacypolicytemplate.net/">Privacy Policy Template Generator</a>.</p>
+                                
+                                <p>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at HustleandCode, unless otherwise defined in this Privacy Policy.</p>
+                                
+                                <h2>Information Collection and Use</h2>
+                                
+                                <p>For a better experience while using our Service, we may require you to provide us with certain personally identifiable information, including but not limited to your name, phone number, and postal address. The information that we collect will be used to contact or identify you.</p>
+                                
+                                <h2>Log Data</h2>
+                                
+                                <p>We want to inform you that whenever you visit our Service, we collect information that your browser sends to us that is called Log Data. This Log Data may include information such as your computer’s Internet Protocol ("IP") address, browser version, pages of our Service that you visit, the time and date of your visit, the time spent on those pages, and other statistics.</p>
+                                
+                                <h2>Cookies</h2>
+                                
+                                <p>Cookies are files with small amount of data that is commonly used an anonymous unique identifier. These are sent to your browser from the website that you visit and are stored on your computer’s hard drive.</p>
+                                
+                                <p>Our website uses these "cookies" to collection information and to improve our Service. You have the option to either accept or refuse these cookies, and know when a cookie is being sent to your computer. If you choose to refuse our cookies, you may not be able to use some portions of our Service.</p>
+                                
+                                <h2>Service Providers</h2>
+                                
+                                <p>We may employ third-party companies and individuals due to the following reasons:</p>
+                                
+                                <ul>
+                                    <li>To facilitate our Service;</li>
+                                    <li>To provide the Service on our behalf;</li>
+                                    <li>To perform Service-related services; or</li>
+                                    <li>To assist us in analyzing how our Service is used.</li>
                                 </ul>
+                                
+                                <p>We want to inform our Service users that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.</p>
+                                
+                                <h2>Security</h2>
+                                
+                                <p>We value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.</p>
+                                
+                                <h2>Links to Other Sites</h2>
+                                
+                                <p>Our Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites. We have no control over, and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</p>
+                                
+                                <h2>Children's Privacy</h2>
+                                
+                                <p>Our Services do not address anyone under the age of 13. We do not knowingly collect personal identifiable information from children under 13. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to do necessary actions.</p>
+                                
+                                <h2>Changes to This Privacy Policy</h2>
+                                
+                                <p>We may update our Privacy Policy from time to time. Thus, we advise you to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately, after they are posted on this page.</p>
+                                
+                                <h2>Contact Us</h2>
+                                
+                                <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.</p>
                             </div>
-
-                            <!-- Start Author  -->
-                            <div class="about-author">
-                                <div class="media">
-                                    <div class="thumbnail">
-                                        <a href="#">
-                                            <img src="assets/images/post-images/author/author-b1.png" alt="Author Images">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <div class="author-info">
-                                            <h5 class="title">
-                                                <a class="hover-flip-item-wrapper" href="#">
-                                                    <span class="hover-flip-item">
-                                                        <span data-text="Rahabi Ahmed Khan">Rahabi Ahmed Khan</span>
-                                                    </span>
-                                                </a>
-                                            </h5>
-                                            <span class="b3 subtitle">Sr. UX Designer</span>
-                                        </div>
-                                        <div class="content">
-                                            <p class="b1 description">At 29 years old, my favorite compliment is being
-                                                told that I look like my mom. Seeing myself in her image, like this
-                                                daughter up top, makes me so proud of how far I’ve come, and so thankful
-                                                for where I come from.</p>
-                                            <ul class="social-share-transparent size-md">
-                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="far fa-envelope"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Author  -->
-
-                            <!-- Start Comment Form Area  -->
-                            <div class="axil-comment-area">
-                                <div class="axil-total-comment-post">
-                                    <div class="title">
-                                        <h4 class="mb--0">30+ Comments</h4>
-                                    </div>
-                                    <div class="add-comment-button cerchio">
-                                        <a class="axil-button button-rounded" href="post-details.html" tabindex="0"><span>Add Your Comment</span></a>
-                                    </div>
-                                </div>
-
-                                <!-- Start Comment Respond  -->
-                                <div class="comment-respond">
-                                    <h4 class="title">Post a comment</h4>
-                                    <form action="#">
-                                        <p class="comment-notes"><span id="email-notes">Your email address will not be
-                                                published.</span> Required fields are marked <span
-                                                class="required">*</span></p>
-                                        <div class="row row--10">
-                                            <div class="col-lg-4 col-md-4 col-12">
-                                                <div class="form-group">
-                                                    <label for="name">Your Name</label>
-                                                    <input id="name" type="text">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-4 col-12">
-                                                <div class="form-group">
-                                                    <label for="email">Your Email</label>
-                                                    <input id="email" type="email">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-4 col-12">
-                                                <div class="form-group">
-                                                    <label for="website">Your Website</label>
-                                                    <input id="website" type="text">
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="form-group">
-                                                    <label for="message">Leave a Reply</label>
-                                                    <textarea id="message" name="message"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <p class="comment-form-cookies-consent">
-                                                    <input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes">
-                                                    <label for="wp-comment-cookies-consent">Save my name, email, and
-                                                        website in this browser for the next time I comment.</label>
-                                                </p>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <div class="form-submit cerchio">
-                                                    <input name="submit" type="submit" id="submit" class="axil-button button-rounded" value="Post Comment">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                                <!-- End Comment Respond  -->
-
-                                <!-- Start Comment Area  -->
-                                <div class="axil-comment-area">
-                                    <h4 class="title">2 comments</h4>
-                                    <ul class="comment-list">
-                                        <!-- Start Single Comment  -->
-                                        <li class="comment">
-                                            <div class="comment-body">
-                                                <div class="single-comment">
-                                                    <div class="comment-img">
-                                                        <img src="assets/images/post-images/author/author-b2.png" alt="Author Images">
-                                                    </div>
-                                                    <div class="comment-inner">
-                                                        <h6 class="commenter">
-                                                            <a class="hover-flip-item-wrapper" href="#">
-                                                                <span class="hover-flip-item">
-                                                                    <span data-text="Cameron Williamson">Cameron
-                                                                        Williamson</span>
-                                                                </span>
-                                                            </a>
-                                                        </h6>
-                                                        <div class="comment-meta">
-                                                            <div class="time-spent">Nov 23, 2018 at 12:23 pm</div>
-                                                            <div class="reply-edit">
-                                                                <div class="reply">
-                                                                    <a class="comment-reply-link hover-flip-item-wrapper" href="#">
-                                                                        <span class="hover-flip-item">
-                                                                            <span data-text="Reply">Reply</span>
-                                                                        </span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="comment-text">
-                                                            <p class="b2">Duis hendrerit velit scelerisque felis tempus,
-                                                                id porta
-                                                                libero venenatis. Nulla facilisi. Phasellus viverra
-                                                                magna commodo dui lacinia tempus. Donec malesuada nunc
-                                                                non dui posuere, fringilla vestibulum urna mollis.
-                                                                Integer condimentum ac sapien quis maximus. </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <ul class="children">
-                                                <!-- Start Single Comment  -->
-                                                <li class="comment">
-                                                    <div class="comment-body">
-                                                        <div class="single-comment">
-                                                            <div class="comment-img">
-                                                                <img src="assets/images/post-images/author/author-b3.png" alt="Author Images">
-                                                            </div>
-                                                            <div class="comment-inner">
-                                                                <h6 class="commenter">
-                                                                    <a class="hover-flip-item-wrapper" href="#">
-                                                                        <span class="hover-flip-item">
-                                                                            <span data-text="Rahabi Khan">Rahabi
-                                                                                Khan</span>
-                                                                        </span>
-                                                                    </a>
-                                                                </h6>
-                                                                <div class="comment-meta">
-                                                                    <div class="time-spent">Nov 23, 2018 at 12:23 pm
-                                                                    </div>
-                                                                    <div class="reply-edit">
-                                                                        <div class="reply">
-                                                                            <a class="comment-reply-link hover-flip-item-wrapper" href="#">
-                                                                                <span class="hover-flip-item">
-                                                                                    <span data-text="Reply">Reply</span>
-                                                                                </span>
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="comment-text">
-                                                                    <p class="b2">Pellentesque habitant morbi tristique
-                                                                        senectus et netus et malesuada fames ac turpis
-                                                                        egestas. Suspendisse lobortis cursus lacinia.
-                                                                        Vestibulum vitae leo id diam pellentesque
-                                                                        ornare.</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <!-- End Single Comment  -->
-                                            </ul>
-                                        </li>
-                                        <!-- End Single Comment  -->
-
-                                        <!-- Start Single Comment  -->
-                                        <li class="comment">
-                                            <div class="comment-body">
-                                                <div class="single-comment">
-                                                    <div class="comment-img">
-                                                        <img src="assets/images/post-images/author/author-b2.png" alt="Author Images">
-                                                    </div>
-                                                    <div class="comment-inner">
-                                                        <h6 class="commenter">
-                                                            <a class="hover-flip-item-wrapper" href="#">
-                                                                <span class="hover-flip-item">
-                                                                    <span data-text="Rahabi Khan">Rahabi Khan</span>
-                                                                </span>
-                                                            </a>
-                                                        </h6>
-                                                        <div class="comment-meta">
-                                                            <div class="time-spent">Nov 23, 2018 at 12:23 pm</div>
-                                                            <div class="reply-edit">
-                                                                <div class="reply">
-                                                                    <a class="comment-reply-link hover-flip-item-wrapper" href="#">
-                                                                        <span class="hover-flip-item">
-                                                                            <span data-text="Reply">Reply</span>
-                                                                        </span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="comment-text">
-                                                            <p class="b2">Duis hendrerit velit scelerisque felis tempus,
-                                                                id porta
-                                                                libero venenatis. Nulla facilisi. Phasellus viverra
-                                                                magna commodo dui lacinia tempus. Donec malesuada nunc
-                                                                non dui posuere, fringilla vestibulum urna mollis.
-                                                                Integer condimentum ac sapien quis maximus. </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <!-- End Single Comment  -->
-                                    </ul>
-                                </div>
-                                <!-- End Comment Area  -->
-
-                            </div>
-                            <!-- End Comment Form Area  -->
-
-
                         </div>
-                        <!-- End Blog Details  -->
                     </div>
                 </div>
             </div>
         </div>
         <!-- End Post Single Wrapper  -->
-        <!-- Start More Stories Area  -->
-        <div class="axil-more-stories-area axil-section-gap bg-color-grey">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title">
-                            <h2 class="title">More Stories</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-
-                    <!-- Start Stories Post  -->
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                        <!-- Start Post List  -->
-                        <div class="post-stories content-block mt--30">
-                            <div class="post-thumbnail">
-                                <a href="post-details.html">
-                                    <img src="assets/images/post-single/stories-01.jpg" alt="Post Images">
-                                </a>
-                            </div>
-                            <div class="post-content">
-                                <div class="post-cat">
-                                    <div class="post-cat-list">
-                                        <a href="#">LEADERSHIP</a>
-                                    </div>
-                                </div>
-                                <h5 class="title"><a href="post-details.html">Microsoft and Bridgestone launch real-time
-                                        tire</a></h5>
-                            </div>
-                        </div>
-                        <!-- End Post List  -->
-                    </div>
-                    <!-- Start Stories Post  -->
-
-                    <!-- Start Stories Post  -->
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                        <!-- Start Post List  -->
-                        <div class="post-stories content-block mt--30">
-                            <div class="post-thumbnail">
-                                <a href="post-details.html">
-                                    <img src="assets/images/post-single/stories-02.jpg" alt="Post Images">
-                                </a>
-                            </div>
-                            <div class="post-content">
-                                <div class="post-cat">
-                                    <div class="post-cat-list">
-                                        <a href="#">DESIGN</a>
-                                    </div>
-                                </div>
-                                <h5 class="title"><a href="post-details.html">Microsoft and Bridgestone launch real-time
-                                        tire</a></h5>
-                            </div>
-                        </div>
-                        <!-- End Post List  -->
-                    </div>
-                    <!-- Start Stories Post  -->
-
-                    <!-- Start Stories Post  -->
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                        <!-- Start Post List  -->
-                        <div class="post-stories content-block mt--30">
-                            <div class="post-thumbnail">
-                                <a href="post-details.html">
-                                    <img src="assets/images/post-single/stories-03.jpg" alt="Post Images">
-                                </a>
-                            </div>
-                            <div class="post-content">
-                                <div class="post-cat">
-                                    <div class="post-cat-list">
-                                        <a href="#">PRODUCT UPDATES</a>
-                                    </div>
-                                </div>
-                                <h5 class="title"><a href="post-details.html">Microsoft and Bridgestone launch real-time
-                                        tire</a></h5>
-                            </div>
-                        </div>
-                        <!-- End Post List  -->
-                    </div>
-                    <!-- Start Stories Post  -->
-
-                    <!-- Start Stories Post  -->
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                        <!-- Start Post List  -->
-                        <div class="post-stories content-block mt--30">
-                            <div class="post-thumbnail">
-                                <a href="post-details.html">
-                                    <img src="assets/images/post-single/stories-04.jpg" alt="Post Images">
-                                </a>
-                            </div>
-                            <div class="post-content">
-                                <div class="post-cat">
-                                    <div class="post-cat-list">
-                                        <a href="#">COLLABORATION</a>
-                                    </div>
-                                </div>
-                                <h5 class="title"><a href="post-details.html">Microsoft and Bridgestone launch real-time
-                                        tire</a></h5>
-                            </div>
-                        </div>
-                        <!-- End Post List  -->
-                    </div>
-                    <!-- Start Stories Post  -->
-                </div>
-            </div>
-        </div>
-        <!-- End More Stories Area  -->
-
-        <!-- Start Instagram Area  -->
-        <div class="axil-instagram-area axil-section-gap bg-color-extra03">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title">
-                            <h2 class="title">Instagram</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt--30">
-                    <div class="col-lg-12">
-                        <ul class="instagram-post-list">
-                            <li class="single-post">
-                                <a href="#">
-                                    <img src="assets/images/small-images/instagram-md-01.jpg" alt="Instagram Images">
-                                    <span class="instagram-button"><i class="fab fa-instagram"></i></span>
-                                </a>
-                            </li>
-                            <li class="single-post">
-                                <a href="#">
-                                    <img src="assets/images/small-images/instagram-md-02.jpg" alt="Instagram Images">
-                                    <span class="instagram-button"><i class="fab fa-instagram"></i></span>
-                                </a>
-                            </li>
-                            <li class="single-post">
-                                <a href="#">
-                                    <img src="assets/images/small-images/instagram-md-03.jpg" alt="Instagram Images">
-                                    <span class="instagram-button"><i class="fab fa-instagram"></i></span>
-                                </a>
-                            </li>
-                            <li class="single-post">
-                                <a href="#">
-                                    <img src="assets/images/small-images/instagram-md-04.jpg" alt="Instagram Images">
-                                    <span class="instagram-button"><i class="fab fa-instagram"></i></span>
-                                </a>
-                            </li>
-                            <li class="single-post">
-                                <a href="#">
-                                    <img src="assets/images/small-images/instagram-md-05.jpg" alt="Instagram Images">
-                                    <span class="instagram-button"><i class="fab fa-instagram"></i></span>
-                                </a>
-                            </li>
-                            <li class="single-post">
-                                <a href="#">
-                                    <img src="assets/images/small-images/instagram-md-06.jpg" alt="Instagram Images">
-                                    <span class="instagram-button"><i class="fab fa-instagram"></i></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Instagram Area  -->
-        {{-- <article>
-            <h1>{{ $post->title }}</h1>
-
-            <p>
-                By <a href="/?author={{ $post->author->username }}">{{ $post->author->name }}</a> in <a href="/categories/{{ $post->category->slug }}">{{ $post->category->name }}</a>
-            </p>
-
-            <div>
-            <p> {!! $post->body !!} </p> 
-            </div>
-        </article>
-
-    <a href="/">Go back</a> --}}
 
 </x-layout>

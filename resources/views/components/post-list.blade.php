@@ -9,7 +9,7 @@
                     <div class="post-content">
                         <div class="post-cat">
                             <div class="post-cat-list">
-                                <a class="hover-flip-item-wrapper" href="/posts/{{ $post->slug }}">
+                                <a class="hover-flip-item-wrapper" href="/categories/{{$post->topic[0]->slug}}">
                                     <span class="hover-flip-item">
                                         <span data-text="
                                         {{$post->topic[0]->name}}">{{$post->topic[0]->name}}</span>

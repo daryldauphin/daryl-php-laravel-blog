@@ -50,10 +50,30 @@ Route::get('categories/{category:slug}', function ( Topic $category, Tag $tag, P
 }});
 
 Route::get('author/{author:username}', function (User $user, Topic $category, Post $post, Tag $tag) { 
+    $posts = Post::latest();
+    $categories = Topic::all();
+    $tags = Tag::all();
+
+    if (request('search')) {
+        $posts
+        ->where('title', 'like', '%' . request('search') . '%')
+        ->orWhere('body', 'like', '%' . request('search') . '%');
+
+        $tags
+        ->where('name', 'like', '%' . request('search') . '%');
+
+        return view('search', [
+            'posts' => $posts->get(),
+            'categories' => $categories,
+            'tags' => $tags,
+        ]);
+    } else {
     return view('author', [ 
-        // 'posts' => $user->posts->load(['category', 'user']),
+        // 'posts' => Post::latest()->with('topic', 'user')->get(),
+        'posts' => $user->posts,
+        'user' => User::all()
     ]);
-});
+}});
 
 Route::get('/all-videos', function (Topic $category, Post $post, Tag $tag) {
 
@@ -197,9 +217,26 @@ Route::get('/resources', function (User $user, Topic $topic, Post $posts, Tag $t
 
 Route::get('/store', function ( Tag $tag) {
     $categories = Topic::all();
+    $posts = Post::latest();
+    $categories = Topic::all();
+    $tags = Tag::all();
 
+    if (request('search')) {
+        $posts
+        ->where('title', 'like', '%' . request('search') . '%')
+        ->orWhere('body', 'like', '%' . request('search') . '%');
+
+        $tags
+        ->where('name', 'like', '%' . request('search') . '%');
+
+        return view('search', [
+            'posts' => $posts->get(),
+            'categories' => $categories,
+            'tags' => $tags,
+        ]);
+    } else {
     return view('store', [        
         'categories' => $categories,
         'tags' => $tags = Tag::all()
     ]); 
-});
+}});
