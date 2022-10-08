@@ -1,13 +1,10 @@
-<?php $parser = new \Gbuckingham89\YouTubeRSSParser\Parser();
+<?php
+$parser = new \Gbuckingham89\YouTubeRSSParser\Parser();
 
 $rss_url = 'https://www.youtube.com/feeds/videos.xml?channel_id=UCjfUJkrcF6xeqD_8E1Wp-Rg';
 $parser->loadUrl($rss_url);
 
 $youtube_feed = $parser->channel->videos;
-
-// var_dump($youtube_feed);
-// ddd($youtube_feed);
-// var_dump($youtube_feed[0]->published_at);
 use Illuminate\Support\Arr;
 ?>
 
@@ -58,12 +55,6 @@ use Illuminate\Support\Arr;
                                     </ul>
                                 </div>
                             </div>
-                            {{-- <ul class="social-share-transparent justify-content-end">
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fas fa-link"></i></a></li>
-                            </ul> --}}
                         </div>
                     </div>
                 </div>
@@ -83,6 +74,9 @@ use Illuminate\Support\Arr;
                     <!-- End Video List  -->
                 </div>
             </div>
+        </div>
+        <div class="tagcloud middle-gap">
+            <a href="/all-videos">See More Videos</a>
         </div>
     </div>
 </div>

@@ -4,16 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Home Default || Blogar - Personal Blog Template</title>
-    <meta name="robots" content="noindex, follow" />
-    <meta name="description" content="">
+    <title>Hustle And Code</title>
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Hustle and Code is the premier lifestyle blog for the ambitious programmer in the hustle.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
-
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('/images/favicon.png') }}">
+    
     <!-- CSS
     ============================================ -->
-
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" >
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('/css/vendor/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/vendor/font-awesome.css') }}">
@@ -22,9 +22,6 @@
     <link rel="stylesheet" href="{{ asset('/css/vendor/base.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/plugins/plugins.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/style.css') }}">
-
-
-
 
 </head>
 
@@ -55,8 +52,8 @@
                     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-3 col-12">
                         <div class="logo">
                             <a href="/">
-                                <img class="dark-logo" src="{{ asset('/images/logo/logo.png') }}" alt="Daryl Dauphin Logo">
-                                <img class="light-logo" src="{{ asset('/images/logo/logo.png') }}" alt="Daryl Dauphin Logo">
+                                <img lazy="loading" class="dark-logo" src="{{ asset('/images/logo/logo.png') }}" alt="Hustle and Code Logo">
+                                <img lazy="loading" class="light-logo" src="{{ asset('/images/logo/logo-dark.png') }}" alt="Hustle and Code Logo">
                             </a>
                         </div>
                     </div>
@@ -66,644 +63,14 @@
                             <nav class="mainmenu-nav">
                                 <!-- Start Mainmanu Nav -->
                                 <ul class="mainmenu">
-                                {{--  <li class="menu-item-has-children"><a href="#">Home</a>
-                                        <ul class="axil-submenu">
-                                            <li>
-                                                <a class="hover-flip-item-wrapper" href="index.html">
-                                                    <span class="hover-flip-item">
-                        <span data-text="Home Default">Home Default</span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="hover-flip-item-wrapper" href="home-creative-blog.html">
-                                                    <span class="hover-flip-item">
-                        <span data-text="Home Creative Blog">Home Creative Blog</span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="hover-flip-item-wrapper" href="home-seo-blog.html">
-                                                    <span class="hover-flip-item">
-                        <span data-text="Home SEO Blog">Home SEO Blog</span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="hover-flip-item-wrapper" href="home-tech-blog.html">
-                                                    <span class="hover-flip-item">
-                        <span data-text="Home Tech Blog">Home Tech Blog</span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="hover-flip-item-wrapper" href="home-lifestyle-blog.html">
-                                                    <span class="hover-flip-item">
-                        <span data-text="Home Lifestyle Blog">Home Lifestyle Blog</span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="menu-item-has-children"><a href="#">Posts</a>
-                                        <ul class="axil-submenu">
-                                            <li>
-                                                <a class="hover-flip-item-wrapper" href="post-format-standard.html">
-                                                    <span class="hover-flip-item">
-                        <span data-text="Post Format Standard">Post Format Standard</span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="hover-flip-item-wrapper" href="post-format-video.html">
-                                                    <span class="hover-flip-item">
-                        <span data-text="Post Format Video">Post Format Video</span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="hover-flip-item-wrapper" href="post-format-gallery.html">
-                                                    <span class="hover-flip-item">
-                        <span data-text="Post Format Gallery">Post Format Gallery</span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="hover-flip-item-wrapper" href="post-format-text.html">
-                                                    <span class="hover-flip-item">
-                        <span data-text="Post Format Text Only">Post Format Text Only</span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="hover-flip-item-wrapper" href="post-layout-1.html">
-                                                    <span class="hover-flip-item">
-                        <span data-text="Post Layout One">Post Layout One</span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="hover-flip-item-wrapper" href="post-layout-2.html">
-                                                    <span class="hover-flip-item">
-                        <span data-text="Post Layout Two">Post Layout Two</span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="hover-flip-item-wrapper" href="post-layout-3.html">
-                                                    <span class="hover-flip-item">
-                        <span data-text="Post Layout Three">Post Layout Three</span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="hover-flip-item-wrapper" href="post-layout-4.html">
-                                                    <span class="hover-flip-item">
-                        <span data-text="Post Layout Four">Post Layout Four</span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="hover-flip-item-wrapper" href="post-layout-5.html">
-                                                    <span class="hover-flip-item">
-                        <span data-text="Post Layout Five">Post Layout Five</span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="menu-item-has-children megamenu-wrapper"><a href="#">Mega Menu</a>
-                                        <ul class="megamenu-sub-menu">
-                                            <li class="megamenu-item">
-
-                                                <!-- Start Verticle Nav  -->
-                                                <div class="axil-vertical-nav">
-                                                    <ul class="vertical-nav-menu">
-                                                        <li class="vertical-nav-item active">
-                                                            <a class="hover-flip-item-wrapper" href="#tab1">
-                                                                <span class="hover-flip-item">
-                                    <span data-text="Accessibility">Accessibility</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="vertical-nav-item">
-                                                            <a class="hover-flip-item-wrapper" href="#tab2">
-                                                                <span class="hover-flip-item">
-                                    <span data-text="Android Dev">Android Dev</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="vertical-nav-item">
-                                                            <a class="hover-flip-item-wrapper" href="#tab3">
-                                                                <span class="hover-flip-item">
-                                    <span data-text="Blockchain">Blockchain</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="vertical-nav-item">
-                                                            <a class="hover-flip-item-wrapper" href="#tab4">
-                                                                <span class="hover-flip-item">
-                                    <span data-text="Gadgets">Gadgets</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <!-- Start Verticle Nav  -->
-
-                                                <!-- Start Verticle Menu  -->
-                                                <div class="axil-vertical-nav-content">
-                                                    <!-- Start One Item  -->
-                                                    <div class="axil-vertical-inner tab-content" id="tab1" style="display: block;">
-                                                        <div class="axil-vertical-single">
-                                                            <div class="row">
-
-                                                                <!-- Start Post List  -->
-                                                                <div class="col-lg-3">
-                                                                    <div class="content-block image-rounded">
-                                                                        <div class="post-thumbnail mb--20">
-                                                                            <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-01.jpg" alt="Post Images">
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="post-content">
-                                                                            <div class="post-cat">
-                                                                                <div class="post-cat-list">
-                                                                                    <a class="hover-flip-item-wrapper" href="#">
-                                                                                        <span class="hover-flip-item">
-                                                            <span data-text="DESIGN">DESIGN</span>
-                                                                                        </span>
-                                                                                    </a>
-                                                                                </div>
-                                                                            </div>
-                                                                            <h5 class="title"><a href="post-details.html">India may require online shops to hand</a></h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- End Post List  -->
-
-                                                                <!-- Start Post List  -->
-                                                                <div class="col-lg-3">
-                                                                    <div class="content-block image-rounded">
-                                                                        <div class="post-thumbnail mb--20">
-                                                                            <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-02.jpg" alt="Post Images">
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="post-content">
-                                                                            <div class="post-cat">
-                                                                                <div class="post-cat-list">
-                                                                                    <a class="hover-flip-item-wrapper" href="#">
-                                                                                        <span class="hover-flip-item">
-                                                            <span data-text="CREATIVE">CREATIVE</span>
-                                                                                        </span>
-                                                                                    </a>
-                                                                                </div>
-                                                                            </div>
-                                                                            <h5 class="title"><a href="post-details.html">Lightweight, grippable, and ready to go.</a></h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- End Post List  -->
-
-                                                                <!-- Start Post List  -->
-                                                                <div class="col-lg-3">
-                                                                    <div class="content-block image-rounded">
-                                                                        <div class="post-thumbnail mb--20">
-                                                                            <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-03.jpg" alt="Post Images">
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="post-content">
-                                                                            <div class="post-cat">
-                                                                                <div class="post-cat-list">
-                                                                                    <a class="hover-flip-item-wrapper" href="#">
-                                                                                        <span class="hover-flip-item">
-                                                            <span data-text="TRAVEL">TRAVEL</span>
-                                                                                        </span>
-                                                                                    </a>
-                                                                                </div>
-                                                                            </div>
-                                                                            <h5 class="title"><a href="post-details.html">Bold new experience. Same Mac magic.</a></h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- End Post List  -->
-
-                                                                <!-- Start Post List  -->
-                                                                <div class="col-lg-3">
-                                                                    <div class="content-block image-rounded">
-                                                                        <div class="post-thumbnail mb--20">
-                                                                            <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-04.jpg" alt="Post Images">
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="post-content">
-                                                                            <div class="post-cat">
-                                                                                <div class="post-cat-list">
-                                                                                    <a class="hover-flip-item-wrapper" href="#">
-                                                                                        <span class="hover-flip-item">
-                                                            <span data-text="GADGETS">GADGETS</span>
-                                                                                        </span>
-                                                                                    </a>
-                                                                                </div>
-                                                                            </div>
-                                                                            <h5 class="title"><a href="post-details.html">Creative Game With The New DJI Mavic Air</a></h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- End Post List  -->
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- End One Item  -->
-
-                                                    <!-- Start One Item  -->
-                                                    <div class="axil-vertical-inner tab-content" id="tab2">
-                                                        <div class="axil-vertical-single">
-                                                            <div class="row">
-
-                                                                <!-- Start Post List  -->
-                                                                <div class="col-lg-3">
-                                                                    <div class="content-block image-rounded">
-                                                                        <div class="post-thumbnail mb--20">
-                                                                            <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-04.jpg" alt="Post Images">
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="post-content">
-                                                                            <div class="post-cat">
-                                                                                <div class="post-cat-list">
-                                                                                    <a class="hover-flip-item-wrapper" href="#">
-                                                                                        <span class="hover-flip-item">
-                                                            <span data-text="DESIGN">DESIGN</span>
-                                                                                        </span>
-                                                                                    </a>
-                                                                                </div>
-                                                                            </div>
-                                                                            <h5 class="title"><a href="post-details.html">India may require online shops to hand</a></h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- End Post List  -->
-                                                                <!-- Start Post List  -->
-                                                                <div class="col-lg-3">
-                                                                    <div class="content-block image-rounded">
-                                                                        <div class="post-thumbnail mb--20">
-                                                                            <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-03.jpg" alt="Post Images">
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="post-content">
-                                                                            <div class="post-cat">
-                                                                                <div class="post-cat-list">
-                                                                                    <a class="hover-flip-item-wrapper" href="#">
-                                                                                        <span class="hover-flip-item">
-                                                            <span data-text="DESIGN">DESIGN</span>
-                                                                                        </span>
-                                                                                    </a>
-                                                                                </div>
-                                                                            </div>
-                                                                            <h5 class="title"><a href="post-details.html">Lightweight, grippable, and ready to go.</a></h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- End Post List  -->
-                                                                <!-- Start Post List  -->
-                                                                <div class="col-lg-3">
-                                                                    <div class="content-block image-rounded">
-                                                                        <div class="post-thumbnail mb--20">
-                                                                            <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-02.jpg" alt="Post Images">
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="post-content">
-                                                                            <div class="post-cat">
-                                                                                <div class="post-cat-list">
-                                                                                    <a class="hover-flip-item-wrapper" href="#">
-                                                                                        <span class="hover-flip-item">
-                                                            <span data-text="DESIGN">DESIGN</span>
-                                                                                        </span>
-                                                                                    </a>
-                                                                                </div>
-                                                                            </div>
-                                                                            <h5 class="title"><a href="post-details.html">Bold new experience. Same Mac magic.</a></h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- End Post List  -->
-                                                                <!-- Start Post List  -->
-                                                                <div class="col-lg-3">
-                                                                    <div class="content-block image-rounded">
-                                                                        <div class="post-thumbnail mb--20">
-                                                                            <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-04.jpg" alt="Post Images">
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="post-content">
-                                                                            <div class="post-cat">
-                                                                                <div class="post-cat-list">
-                                                                                    <a class="hover-flip-item-wrapper" href="#">
-                                                                                        <span class="hover-flip-item">
-                                                            <span data-text="DESIGN">DESIGN</span>
-                                                                                        </span>
-                                                                                    </a>
-                                                                                </div>
-                                                                            </div>
-                                                                            <h5 class="title"><a href="post-details.html">Creative Game With The New DJI Mavic Air</a></h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- End Post List  -->
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- End One Item  -->
-
-                                                    <!-- Start One Item  -->
-                                                    <div class="axil-vertical-inner tab-content" id="tab3">
-                                                        <div class="axil-vertical-single">
-                                                            <div class="row">
-
-                                                                <!-- Start Post List  -->
-                                                                <div class="col-lg-3">
-                                                                    <div class="content-block image-rounded">
-                                                                        <div class="post-thumbnail mb--20">
-                                                                            <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-04.jpg" alt="Post Images">
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="post-content">
-                                                                            <div class="post-cat">
-                                                                                <div class="post-cat-list">
-                                                                                    <a class="hover-flip-item-wrapper" href="#">
-                                                                                        <span class="hover-flip-item">
-                                                            <span data-text="DESIGN">DESIGN</span>
-                                                                                        </span>
-                                                                                    </a>
-                                                                                </div>
-                                                                            </div>
-                                                                            <h5 class="title"><a href="post-details.html">Creative Game With The New DJI Mavic Air</a></h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- End Post List  -->
-                                                                <!-- Start Post List  -->
-                                                                <div class="col-lg-3">
-                                                                    <div class="content-block image-rounded">
-                                                                        <div class="post-thumbnail mb--20">
-                                                                            <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-03.jpg" alt="Post Images">
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="post-content">
-                                                                            <div class="post-cat">
-                                                                                <div class="post-cat-list">
-                                                                                    <a class="hover-flip-item-wrapper" href="#">
-                                                                                        <span class="hover-flip-item">
-                                                            <span data-text="DESIGN">DESIGN</span>
-                                                                                        </span>
-                                                                                    </a>
-                                                                                </div>
-                                                                            </div>
-                                                                            <h5 class="title"><a href="post-details.html">Bold new experience. Same Mac magic.</a></h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- End Post List  -->
-                                                                <!-- Start Post List  -->
-                                                                <div class="col-lg-3">
-                                                                    <div class="content-block image-rounded">
-                                                                        <div class="post-thumbnail mb--20">
-                                                                            <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-02.jpg" alt="Post Images">
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="post-content">
-                                                                            <div class="post-cat">
-                                                                                <div class="post-cat-list">
-                                                                                    <a class="hover-flip-item-wrapper" href="#">
-                                                                                        <span class="hover-flip-item">
-                                                            <span data-text="DESIGN">DESIGN</span>
-                                                                                        </span>
-                                                                                    </a>
-                                                                                </div>
-                                                                            </div>
-                                                                            <h5 class="title"><a href="post-details.html">Lightweight, grippable, and ready to go.</a></h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- End Post List  -->
-                                                                <!-- Start Post List  -->
-                                                                <div class="col-lg-3">
-                                                                    <div class="content-block image-rounded">
-                                                                        <div class="post-thumbnail mb--20">
-                                                                            <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-04.jpg" alt="Post Images">
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="post-content">
-                                                                            <div class="post-cat">
-                                                                                <div class="post-cat-list">
-                                                                                    <a class="hover-flip-item-wrapper" href="#">
-                                                                                        <span class="hover-flip-item">
-                                                            <span data-text="DESIGN">DESIGN</span>
-                                                                                        </span>
-                                                                                    </a>
-                                                                                </div>
-                                                                            </div>
-                                                                            <h5 class="title"><a href="post-details.html">India may require online shops to hand</a></h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- End Post List  -->
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- End One Item  -->
-
-                                                    <!-- Start One Item  -->
-                                                    <div class="axil-vertical-inner tab-content" id="tab4">
-                                                        <div class="axil-vertical-single">
-                                                            <div class="row">
-
-                                                                <!-- Start Post List  -->
-                                                                <div class="col-lg-3">
-                                                                    <div class="content-block image-rounded">
-                                                                        <div class="post-thumbnail mb--20">
-                                                                            <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-01.jpg" alt="Post Images">
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="post-content">
-                                                                            <div class="post-cat">
-                                                                                <div class="post-cat-list">
-                                                                                    <a class="hover-flip-item-wrapper" href="#">
-                                                                                        <span class="hover-flip-item">
-                                                            <span data-text="DESIGN">DESIGN</span>
-                                                                                        </span>
-                                                                                    </a>
-                                                                                </div>
-                                                                            </div>
-                                                                            <h5 class="title"><a href="post-details.html">India may require online shops to hand</a></h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- End Post List  -->
-                                                                <!-- Start Post List  -->
-                                                                <div class="col-lg-3">
-                                                                    <div class="content-block image-rounded">
-                                                                        <div class="post-thumbnail mb--20">
-                                                                            <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-04.jpg" alt="Post Images">
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="post-content">
-                                                                            <div class="post-cat">
-                                                                                <div class="post-cat-list">
-                                                                                    <a class="hover-flip-item-wrapper" href="#">
-                                                                                        <span class="hover-flip-item">
-                                                            <span data-text="DESIGN">DESIGN</span>
-                                                                                        </span>
-                                                                                    </a>
-                                                                                </div>
-                                                                            </div>
-                                                                            <h5 class="title"><a href="post-details.html">Lightweight, grippable, and ready to go.</a></h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- End Post List  -->
-
-                                                                <!-- Start Post List  -->
-                                                                <div class="col-lg-3">
-                                                                    <div class="content-block image-rounded">
-                                                                        <div class="post-thumbnail mb--20">
-                                                                            <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-03.jpg" alt="Post Images">
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="post-content">
-                                                                            <div class="post-cat">
-                                                                                <div class="post-cat-list">
-                                                                                    <a class="hover-flip-item-wrapper" href="#">
-                                                                                        <span class="hover-flip-item">
-                                                            <span data-text="DESIGN">DESIGN</span>
-                                                                                        </span>
-                                                                                    </a>
-                                                                                </div>
-                                                                            </div>
-                                                                            <h5 class="title"><a href="post-details.html">Bold new experience. Same Mac magic.</a></h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- End Post List  -->
-
-                                                                <!-- Start Post List  -->
-                                                                <div class="col-lg-3">
-                                                                    <div class="content-block image-rounded">
-                                                                        <div class="post-thumbnail mb--20">
-                                                                            <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-04.jpg" alt="Post Images">
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="post-content">
-                                                                            <div class="post-cat">
-                                                                                <div class="post-cat-list">
-                                                                                    <a class="hover-flip-item-wrapper" href="#">
-                                                                                        <span class="hover-flip-item">
-                                                            <span data-text="DESIGN">DESIGN</span>
-                                                                                        </span>
-                                                                                    </a>
-                                                                                </div>
-                                                                            </div>
-                                                                            <h5 class="title"><a href="post-details.html">Creative Game With The New DJI Mavic Air</a></h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- End Post List  -->
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- End One Item  -->
-
-                                                </div>
-                                                <!-- End Verticle Menu  -->
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="menu-item-has-children"><a href="#">Pages</a>
-                                        <ul class="axil-submenu">
-                                            <li>
-                                                <a class="hover-flip-item-wrapper" href="post-list.html">
-                                                    <span class="hover-flip-item">
-                        <span data-text="Post List">Post List</span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="hover-flip-item-wrapper" href="archive.html">
-                                                    <span class="hover-flip-item">
-                        <span data-text="Post Archive">Post Archive</span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="hover-flip-item-wrapper" href="author.html">
-                                                    <span class="hover-flip-item">
-                        <span data-text="Author Page">Author Page</span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="hover-flip-item-wrapper" href="about.html">
-                                                    <span class="hover-flip-item">
-                        <span data-text="About Page">About Page</span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="hover-flip-item-wrapper" href="contact.html">
-                                                    <span class="hover-flip-item">
-                        <span data-text="Contact Us">Contact Us</span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="hover-flip-item-wrapper" href="404.html">
-                                                    <span class="hover-flip-item">
-                        <span data-text="404 Page">404 Page</span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="hover-flip-item-wrapper" href="maintenance.html">
-                                                    <span class="hover-flip-item">
-                        <span data-text="Maintenance">Maintenance</span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="hover-flip-item-wrapper" href="privacy-policy.html">
-                                                    <span class="hover-flip-item">
-                        <span data-text="Privacy Policy">Privacy Policy</span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li> --}}
-                                    <li><a href="home-lifestyle-blog.html">Home</a></li>
-                                    <li><a href="home-tech-blog.html">About</a></li>
-                                    <li><a href="home-lifestyle-blog.html">Newsletter</a></li>
-                                    <li><a href="home-lifestyle-blog.html">Store</a></li>
-                                    <li><a href="home-lifestyle-blog.html">Resources</a></li>
-                                    <li><a href="home-tech-blog.html">Contact</a></li>
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="/about">About</a></li>
+                                    <li><a href="/all-posts">Posts</a></li>
+                                    <li><a data-formkit-toggle="ebc1e334ce" href="#0">Newsletter</a></li>
+                                    
+                                    <li><a href="/store">Store</a></li>
+                                    <li><a href="/resources">Resources</a></li>
+                                    <li><a href="/contact">Contact</a></li>
                                 </ul>
                                 <!-- End Mainmanu Nav -->
                             </nav>
@@ -728,9 +95,10 @@
                                 </form>
                             </div>
                             <ul class="metabar-block">
-                                <li class="icon"><a href="#"><i class="fas fa-bookmark"></i></a></li>
-                                <li class="icon"><a href="#"><i class="fas fa-bell"></i></a></li>
-                                <li><a href="#"><img src="{{ asset('/images/logo/profile.jpg') }}" alt="Author Images"></a></li>
+                                {{-- <li class="icon"><a href="javascript:CreateBookmarkLink();"><i class="fas fa-bookmark"></i></a></li> --}}
+                                {{-- <li class="icon"><a href="#"><i class="fas fa-rss"></i></a></li> --}}
+
+                                {{-- <li><a href="#"><img src="{{ asset('/images/logo/profile.jpg') }}" alt="Author Images"></a></li> --}}
                             </ul>
                             <!-- Start Hamburger Menu  -->
                             <div class="hamburger-menu d-block d-xl-none">
@@ -751,9 +119,9 @@
             <div class="inner">
                 <div class="mobile-menu-top">
                     <div class="logo">
-                        <a href="index.html">
-                            <img class="dark-logo" src="{{ asset('/images/logo/logo.png') }}" alt="Daryl Dauphin Logo">
-                            <img class="light-logo" src="{{ asset('/images/logo/logo.png') }}" alt="Daryl Dauphin Logo">
+                        <a href="/">
+                            <img lazy="loading" class="dark-logo" src="{{ asset('/images/logo/logo.png') }}" alt="Daryl Dauphin Logo">
+                            <img  lazy="loading" class="light-logo" src="{{ asset('/images/logo/logo.png') }}" alt="Daryl Dauphin Logo">
                         </a>
                     </div>
                     <div class="mobile-close">
@@ -763,60 +131,17 @@
                     </div>
                 </div>
                 <ul class="mainmenu">
-                    {{-- <li class="menu-item-has-children"><a href="#">Home</a>
-                        <ul class="axil-submenu">
-                            <li><a href="index.html">Home Default</a></li>
-                            <li><a href="home-creative-blog.html">Home Creative Blog</a></li>
-                            <li><a href="home-seo-blog.html">Home Seo Blog</a></li>
-                            <li><a href="home-tech-blog.html">Home Tech Blog</a></li>
-                            <li><a href="home-lifestyle-blog.html">Home Lifestyle Blog</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children"><a href="#">Categories</a>
-                        <ul class="axil-submenu">
-                            <li><a href="post-details.html">Accessibility</a></li>
-                            <li><a href="post-details.html">Android Dev</a></li>
-                            <li><a href="post-details.html">Accessibility</a></li>
-                            <li><a href="post-details.html">Android Dev</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children"><a href="#">Post Format</a>
-                        <ul class="axil-submenu">
-                            <li><a href="post-format-standard.html">Post Format Standard</a></li>
-                            <li><a href="post-format-video.html">Post Format Video</a></li>
-                            <li><a href="post-format-gallery.html">Post Format Gallery</a></li>
-                            <li><a href="post-format-text.html">Post Format Text Only</a></li>
-                            <li><a href="post-layout-1.html">Post Layout One</a></li>
-                            <li><a href="post-layout-2.html">Post Layout Two</a></li>
-                            <li><a href="post-layout-3.html">Post Layout Three</a></li>
-                            <li><a href="post-layout-4.html">Post Layout Four</a></li>
-                            <li><a href="post-layout-5.html">Post Layout Five</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children"><a href="#">Pages</a>
-                        <ul class="axil-submenu">
-                            <li><a href="post-list.html">Post List</a></li>
-                            <li><a href="archive.html">Post Archive</a></li>
-                            <li><a href="author.html">Author Page</a></li>
-                            <li><a href="about.html">About Page</a></li>
-                            <li><a href="maintenance.html">Maintenance</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                        </ul>
-                    </li> --}}
-                    <li><a href="home-lifestyle-blog.html">Home</a></li>
-                                    <li><a href="home-tech-blog.html">About</a></li>
-                                    <li><a href="home-lifestyle-blog.html">Newsletter</a></li>
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="/about">About</a></li>
+                                    <li><a href="/all-videos">Videos</a></li>
                                     <li>
                                         <div class="buy-now-btn">
-                                        <a href="#">Store <span class="badge">Coming Soon</span></a>
+                                        <a href="/store">Store <span class="badge">Coming soon!</span></a>
                                     </div>
                                     </li>
-                                    <li><a href="home-lifestyle-blog.html">Resources</a></li>
-                                    <li><a href="home-tech-blog.html">Contact</a></li>
+                                    <li><a href="/resources">Resources</a></li>
+                                    <li><a href="/contact">Contact</a></li>
                 </ul> 
-                {{-- <div class="buy-now-btn">
-                    <a href="#">Buy Now <span class="badge">$15</span></a>
-                </div> --}}
             </div>
         </div>
         <!-- End Mobile Menu Area  -->
@@ -834,9 +159,9 @@
 
                         <div class="col-lg-4 col-md-4">
                             <div class="logo">
-                                <a href="index.html">
-                                    <img class="dark-logo" src="{{ asset('/images/logo/logo.png') }}" alt="Daryl Dauphin Logo">
-                                    <img class="white-logo" src="{{ asset('/images/logo/logo.png') }}" alt="Daryl Dauphin Logo">
+                                <a href="/">
+                                    <img lazy="loading" class="dark-logo" src="{{ asset('/images/logo/logo.png') }}" alt="Daryl Dauphin Logo">
+                                    <img lazy="loading" class="white-logo" src="{{ asset('/images/logo/logo-dark.png') }}" alt="Daryl Dauphin Logo">
                                 </a>
                             </div>
                         </div>
@@ -844,13 +169,12 @@
                         <div class="col-lg-8 col-md-8">
                             <!-- Start Post List  -->
                             <div class="d-flex justify-content-start mt_sm--15 justify-content-md-end align-items-center flex-wrap">
-                                <h5 class="follow-title mb--0 mr--20">Follow Me</h5>
+                                <h5 class="follow-title mb--0 mr--20">Follow Us</h5>
                                 <ul class="social-icon color-tertiary md-size justify-content-start">
-                                    <li><a href="https://www.facebook.com/DarylDauphin/"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="https://www.instagram.com/daryldauphin/"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="https://www.youtube.com/channel/UCjfUJkrcF6xeqD_8E1Wp-Rg"><i class="fab fa-youtube"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/in/daryldauphin/"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/in/daryldauphin/"><i class="fab fa-discord"></i></a></li>
+                                    <li><a href="https://twitter.com/hustleandcode_" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/hustleandcode_" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCUIr5dSV7bNLbjL7IctsHtw" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="https://discord.gg/9mCJSXSWc9" target="_blank"><i class="fab fa-discord"></i></a></li>
                                 </ul>
                             </div>
                             <!-- End Post List  -->
@@ -869,23 +193,30 @@
                             <div class="copyright-left">
                                 <ul class="mainmenu justify-content-start">
                                     <li>
-                                        <a class="hover-flip-item-wrapper" href="#">
+                                        <a class="hover-flip-item-wrapper" href="/contact">
                                             <span class="hover-flip-item">
-                                        <span data-text="Contact Us">Contact</span>
+                                        <span data-text="Contact">Contact</span>
                                             </span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="hover-flip-item-wrapper" href="#">
+                                        <a class="hover-flip-item-wrapper" href="/store">
                                             <span class="hover-flip-item">
                                         <span data-text="Store">Store</span>
                                             </span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="hover-flip-item-wrapper" href="#">
+                                        <a class="hover-flip-item-wrapper" href="/privacy">
                                             <span class="hover-flip-item">
                                         <span data-text="Privacy Policy">Privacy Policy</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="hover-flip-item-wrapper" href="/admin">
+                                            <span class="hover-flip-item">
+                                        <span data-text="Login">Login</span>
                                             </span>
                                         </a>
                                     </li>
@@ -894,7 +225,8 @@
                         </div>
                         <div class="col-lg-3 col-md-4">
                             <div class="copyright-right text-start text-md-end mt_sm--20">
-                                <p class="b3">All Rights Reserved © 2022</p>
+                                <p class="b3">What good is it for someone to gain the whole world, yet forfeit their soul? - Mark 8:36
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -922,10 +254,10 @@
     <script src="{{ asset('/js/vendor/tweenmax.min.js')}}"></script>
     <script src="{{ asset('/js/vendor/js.cookie.js')}}"></script>
     <script src="{{ asset('/js/vendor/jquery.style.switcher.js')}}"></script>
-
-
+    
     <!-- Main JS -->
     <script src="{{ asset('/js/main.js')}}"></script>
+    <script async data-uid="ebc1e334ce" src="https://expert-trader-4323.ck.page/ebc1e334ce/index.js"></script>
 
 </body>
 

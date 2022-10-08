@@ -1126,7 +1126,7 @@ font-family: 'Red Hat Display', sans-serif;
     Background Image 
 =============================*/
 .bg_image--1 {
-  background-image: url(../images/bg/bg-image-1.jpg);
+  background-image: url(../images/bg/background.png);
 }
 
 .bg_image--2 {
@@ -1134,7 +1134,7 @@ font-family: 'Red Hat Display', sans-serif;
 }
 
 .bg_image--3 {
-  background-image: url(../images/bg/bg-image-3.jpg);
+  background-image: url(../images/bg/background.png);
 }
 
 .bg_image--4 {
@@ -7882,6 +7882,9 @@ Header Styles
 @media only screen and (max-width: 575px) {
   .axil-header .logo {
     text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+
     margin-bottom: 20px;
   }
 }

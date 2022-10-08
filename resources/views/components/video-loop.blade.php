@@ -1,3 +1,4 @@
+
 <div class="col-lg-6 col-md-6 col-sm-6 col-12">
     <div class="content-block post-default image-rounded mt--30">
         <div class="post-thumbnail">
