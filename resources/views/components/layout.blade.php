@@ -66,7 +66,7 @@
                                     <li><a href="/">Home</a></li>
                                     <li><a href="/about">About</a></li>
                                     <li><a href="/all-posts">Posts</a></li>
-                                    <li><a data-formkit-toggle="ebc1e334ce" href="https://expert-trader-4323.ck.page/ebc1e334ce">Newsletter</a></li>
+                                    <li><a data-formkit-toggle="ebc1e334ce" href="#0">Newsletter</a></li>
                                     
                                     <li><a href="/store">Store</a></li>
                                     <li><a href="/resources">Resources</a></li>
@@ -169,13 +169,12 @@
                         <div class="col-lg-8 col-md-8">
                             <!-- Start Post List  -->
                             <div class="d-flex justify-content-start mt_sm--15 justify-content-md-end align-items-center flex-wrap">
-                                <h5 class="follow-title mb--0 mr--20">Follow Me</h5>
+                                <h5 class="follow-title mb--0 mr--20">Follow Us</h5>
                                 <ul class="social-icon color-tertiary md-size justify-content-start">
-                                    <li><a href="https://www.facebook.com/DarylDauphin/"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="https://www.instagram.com/daryldauphin/"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="https://www.youtube.com/channel/UCjfUJkrcF6xeqD_8E1Wp-Rg"><i class="fab fa-youtube"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/in/daryldauphin/"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="https://discord.gg/9mCJSXSWc9"><i class="fab fa-discord"></i></a></li>
+                                    <li><a href="https://twitter.com/hustleandcode_" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/hustleandcode_" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCUIr5dSV7bNLbjL7IctsHtw" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="https://discord.gg/9mCJSXSWc9" target="_blank"><i class="fab fa-discord"></i></a></li>
                                 </ul>
                             </div>
                             <!-- End Post List  -->
@@ -226,7 +225,8 @@
                         </div>
                         <div class="col-lg-3 col-md-4">
                             <div class="copyright-right text-start text-md-end mt_sm--20">
-                                <p class="b3">All Rights Reserved © 2022</p>
+                                <p class="b3">What good is it for someone to gain the whole world, yet forfeit their soul? - Mark 8:36
+                                </p>
                             </div>
                         </div>
                     </div>

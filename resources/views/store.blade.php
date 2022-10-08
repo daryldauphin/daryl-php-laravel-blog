@@ -68,7 +68,7 @@
                                         <!-- Start Category List  -->
                                         @foreach ($categories as $category)
                                         <x-category-list :category="$category"/>
-                                        @if ($loop->iteration == 4)
+                                        @if ($loop->iteration == 8)
                                         @break
                                         @endif
                                         @endforeach
@@ -89,14 +89,14 @@
                                 <!-- End Single Widget  -->
                                 <!-- Start Single Widget  -->
                                 <div class="axil-single-widget widget widget_social mb--30">
-                                    <h5 class="widget-title">Follow Me</h5>
+                                    <h5 class="widget-title">Follow Us</h5>
+
                                     <!-- Start Post List  -->
                                     <ul class="social-icon md-size justify-content-center">
-                                        <li><a href="https://www.facebook.com/DarylDauphin/"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="https://www.instagram.com/daryldauphin/"><i class="fab fa-instagram"></i></a></li>
-                                        <li><a href="https://www.youtube.com/channel/UCjfUJkrcF6xeqD_8E1Wp-Rg"><i class="fab fa-youtube"></i></a></li>
-                                        <li><a href="https://www.linkedin.com/in/daryldauphin/"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="https://discord.gg/9mCJSXSWc9"><i class="fab fa-discord"></i></a></li>
+                                        <li><a href="https://twitter.com/hustleandcode_" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/hustleandcode_" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCUIr5dSV7bNLbjL7IctsHtw" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="https://discord.gg/9mCJSXSWc9" target="_blank"><i class="fab fa-discord"></i></a></li>
                                     </ul>
                                     <!-- End Post List  -->
                                 </div>

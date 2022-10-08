@@ -62,15 +62,7 @@
                                 @endforeach
                             </div>
                             <div class="social-share-block">
-                                {{-- <div class="post-like">
-                                    <a href="#"><i class="fal fa-thumbs-up"></i><span>2.2k Like</span></a>
-                                </div>
-                                <ul class="social-icon icon-rounded-transparent md-size">
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                </ul> --}}
+                    
                             </div>
                             <!-- Start Author  -->
                             <div class="about-author">
@@ -94,12 +86,11 @@
                                         <div class="content">
                                             <p class="b1 description">{{$post->user->summary}}</p>
                                             <ul class="social-share-transparent size-md">
-                                                <li><a href="https://www.facebook.com/DarylDauphin/"><i class="fab fa-facebook-f"></i></a></li>
-                                                <li><a href="https://www.instagram.com/daryldauphin/"><i class="fab fa-instagram"></i></a></li>
-                                                <li><a href="https://www.youtube.com/channel/UCjfUJkrcF6xeqD_8E1Wp-Rg"><i class="fab fa-youtube"></i></a></li>
+                                                <li><a href="https://twitter.com/hustleandcode_" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="https://www.instagram.com/hustleandcode_" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                                <li><a href="https://www.youtube.com/channel/UCUIr5dSV7bNLbjL7IctsHtw" target="_blank"><i class="fab fa-youtube"></i></a></li>
                                                 <li><a href="https://www.linkedin.com/in/daryldauphin/"><i class="fab fa-linkedin-in"></i></a></li>
-                                                <li><a href="https://discord.gg/9mCJSXSWc9"><i class="fab fa-discord"></i></a></li>
-                                                <li><a href="/contact"><i class="far fa-envelope"></i></a></li>
+                                                <li><a href="https://discord.gg/9mCJSXSWc9" target="_blank"><i class="fab fa-discord"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -118,30 +109,5 @@
                 </div>
             </div>
         </div>
-        <!-- End Post Single Wrapper  -->
-        {{-- <!-- Start More Stories Area  -->
-        <div class="axil-more-stories-area axil-section-gap bg-color-grey">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title">
-                            <h2 class="title">More Stories</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <!-- Start Stories Post  -->
-
-                        <!-- Start Post List  -->
-                        @foreach ($posts as $post)
-                    <x-more-stories :pos="$post"/>
-                    @if ($loop->iteration == 4)
-                        @break
-                        @endif
-                    @endforeach
-                        <!-- End Post List  -->
-                </div>
-            </div>
-        </div> --}}
-        <!-- End More Stories Area  -->
+        
 </x-layout>

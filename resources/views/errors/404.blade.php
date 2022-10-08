@@ -4,16 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Home Default || Blogar - Personal Blog Template</title>
+    <title>Hustle And Code</title>
     <meta name="robots" content="index, follow" />
-    <meta name="description" content="">
+    <meta name="description" content="Hustle and Code is the premier lifestyle blog for the ambitious programmer in the hustle.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('/images/favicon.png') }}">
     
     <!-- CSS
     ============================================ -->
-
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" >
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('/css/vendor/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/vendor/font-awesome.css') }}">
@@ -52,8 +52,8 @@
                     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-3 col-12">
                         <div class="logo">
                             <a href="/">
-                                <img lazy="loading" class="dark-logo" src="{{ asset('/images/logo/logo.png') }}" alt="Daryl Dauphin Logo">
-                                <img lazy="loading" class="light-logo" src="{{ asset('/images/logo/logo.png') }}" alt="Daryl Dauphin Logo">
+                                <img lazy="loading" class="dark-logo" src="{{ asset('/images/logo/logo.png') }}" alt="Hustle and Code Logo">
+                                <img lazy="loading" class="light-logo" src="{{ asset('/images/logo/logo-dark.png') }}" alt="Hustle and Code Logo">
                             </a>
                         </div>
                     </div>
@@ -65,10 +65,11 @@
                                 <ul class="mainmenu">
                                     <li><a href="/">Home</a></li>
                                     <li><a href="/about">About</a></li>
-                                    <li><a data-formkit-toggle="ebc1e334ce" href="https://expert-trader-4323.ck.page/ebc1e334ce">Newsletter</a></li>
-                                    <li><a href="/all-videos">Videos</a></li>
-                                    <li><a href="home-lifestyle-blog.html">Store</a></li>
-                                    <li><a href="/resourses">Resources</a></li>
+                                    <li><a href="/all-posts">Posts</a></li>
+                                    <li><a data-formkit-toggle="ebc1e334ce" href="#0">Newsletter</a></li>
+                                    
+                                    <li><a href="/store">Store</a></li>
+                                    <li><a href="/resources">Resources</a></li>
                                     <li><a href="/contact">Contact</a></li>
                                 </ul>
                                 <!-- End Mainmanu Nav -->
@@ -135,7 +136,7 @@
                                     <li><a href="/all-videos">Videos</a></li>
                                     <li>
                                         <div class="buy-now-btn">
-                                        <a href="#">Store <span class="badge">Were Open!</span></a>
+                                        <a href="/store">Store <span class="badge">Coming soon!</span></a>
                                     </div>
                                     </li>
                                     <li><a href="/resources">Resources</a></li>
@@ -144,8 +145,6 @@
             </div>
         </div>
         <!-- End Mobile Menu Area  -->
-
-
 
 
         <!-- Start Banner Area -->
@@ -184,7 +183,7 @@
                             <div class="logo">
                                 <a href="/">
                                     <img lazy="loading" class="dark-logo" src="{{ asset('/images/logo/logo.png') }}" alt="Daryl Dauphin Logo">
-                                    <img lazy="loading" class="white-logo" src="{{ asset('/images/logo/logo.png') }}" alt="Daryl Dauphin Logo">
+                                    <img lazy="loading" class="white-logo" src="{{ asset('/images/logo/logo-dark.png') }}" alt="Daryl Dauphin Logo">
                                 </a>
                             </div>
                         </div>
@@ -192,13 +191,12 @@
                         <div class="col-lg-8 col-md-8">
                             <!-- Start Post List  -->
                             <div class="d-flex justify-content-start mt_sm--15 justify-content-md-end align-items-center flex-wrap">
-                                <h5 class="follow-title mb--0 mr--20">Follow Me</h5>
+                                <h5 class="follow-title mb--0 mr--20">Follow Us</h5>
                                 <ul class="social-icon color-tertiary md-size justify-content-start">
-                                    <li><a href="https://www.facebook.com/DarylDauphin/"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="https://www.instagram.com/daryldauphin/"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="https://www.youtube.com/channel/UCjfUJkrcF6xeqD_8E1Wp-Rg"><i class="fab fa-youtube"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/in/daryldauphin/"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="https://discord.gg/9mCJSXSWc9"><i class="fab fa-discord"></i></a></li>
+                                    <li><a href="https://twitter.com/hustleandcode_" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/hustleandcode_" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCUIr5dSV7bNLbjL7IctsHtw" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="https://discord.gg/9mCJSXSWc9" target="_blank"><i class="fab fa-discord"></i></a></li>
                                 </ul>
                             </div>
                             <!-- End Post List  -->
@@ -224,7 +222,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="hover-flip-item-wrapper" href="#">
+                                        <a class="hover-flip-item-wrapper" href="/store">
                                             <span class="hover-flip-item">
                                         <span data-text="Store">Store</span>
                                             </span>
@@ -249,7 +247,8 @@
                         </div>
                         <div class="col-lg-3 col-md-4">
                             <div class="copyright-right text-start text-md-end mt_sm--20">
-                                <p class="b3">All Rights Reserved © 2022</p>
+                                <p class="b3">What good is it for someone to gain the whole world, yet forfeit their soul? - Mark 8:36
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -277,12 +276,10 @@
     <script src="{{ asset('/js/vendor/tweenmax.min.js')}}"></script>
     <script src="{{ asset('/js/vendor/js.cookie.js')}}"></script>
     <script src="{{ asset('/js/vendor/jquery.style.switcher.js')}}"></script>
-
-
+    
     <!-- Main JS -->
     <script src="{{ asset('/js/main.js')}}"></script>
     <script async data-uid="ebc1e334ce" src="https://expert-trader-4323.ck.page/ebc1e334ce/index.js"></script>
-
 
 </body>
 
